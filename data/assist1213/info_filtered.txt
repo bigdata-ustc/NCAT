@@ -1,0 +1,1 @@
+assist1213 filtered: stu_all: 35124, exer_all: 31884, kc_all: 225, log_all: 4433884, avg_per_stu: 126.23516683749004 

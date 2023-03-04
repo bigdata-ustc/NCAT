@@ -1,0 +1,49 @@
+name: 'xxx'
+path: ../../data
+log: ./log
+gpu_id: '0'
+dataset_name: assist1213
+model: IRT1
+log_interval: 20
+test_interval: 1 
+note: some_note
+NCD1:
+    # Number of Students Number of Exercises Number of Knowledge Concepts
+    layers_fc_dim: [512, 256]
+    layers_fc_dropout: [0.5, 0.5]
+    batch_size: 64
+    epochs: 10
+    early: 2 
+    best_model_path: best_model_NCD1.pt
+    ## optimal hyperparameters 
+    lr: 0.002
+    cat_lr: 0.002
+    cat_epochs: 1
+    diversity_lambda: 0.5
+
+IRT1:
+    # Number of Students Number of Exercises Number of Knowledge Concepts
+    guess: True
+    batch_size: 64
+    epochs: 10
+    early: 3 
+    best_model_path: best_model_IRT1.pt
+    ## optimal hyperparameters 
+    lr: 0.008
+    cat_lr: 0.002
+    cat_epochs: 1
+    diversity_lambda: 0.5
+
+MIRT1:
+    # Number of Students Number of Exercises Number of Knowledge Concepts
+    dim: 2
+    guess: True
+    batch_size: 64
+    epochs: 20
+    early: 3 
+    best_model_path: best_model_MIRT1.pt
+    ## optimal hyperparameters 
+    lr: 0.002
+    cat_lr: 0.002
+    cat_epochs: 1
+    diversity_lambda: 0.5
