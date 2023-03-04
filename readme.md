@@ -20,3 +20,5 @@ python main.py
 ```
 sh ./model_train.sh
 ```
+
+### CAT process can refer to https://github.com/bigdata-ustc/CAT 
