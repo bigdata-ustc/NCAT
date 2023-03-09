@@ -12,7 +12,7 @@ python divide_data.py
 
 ### CDM Training
 ```
-cd pre_train
+cd envs/pre_train
 python main.py
 ```
 
